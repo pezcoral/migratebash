@@ -10,8 +10,11 @@ Ejemplo:
 
 -----------
   migratebash.bat
+  
   | 
+  
   1100123\
+  
   |
   |        F11001233300420120045501Nombrearchivo1.pdf
   |        F11001233300420120045501Nombrearchivo2.pdf
@@ -24,13 +27,17 @@ Ejemplo:
  
  
   migratebash.bat
+  
   |
   1100123\
   |
+  
   1100123_AZURE\
   |
+  
                 11001233300420120045501\
                 |
+                
                 |                        F11001233300420120045501Nombrearchivo1.pdf
                 |                        F11001233300420120045501Nombrearchivo2.pdf
                 |                        F11001233300420120045501Nombrearchivo3.pdf
