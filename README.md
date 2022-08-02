@@ -9,31 +9,33 @@ y creando una carpeta con ese nombre.
 Ejemplo: 
 
 -----------
-  migratebash.bat
-  
-  | 
-  
-  1100123\
-  
-  |
-  |        F11001233300420120045501Nombrearchivo1.pdf
-  |        F11001233300420120045501Nombrearchivo2.pdf
-  |        F11001233300420120045501Nombrearchivo3.pdf
-  |        F11001233300420120045501Nombrearchivo4.pdf
-  |        F11001233300420120045501Nombrearchivo5.pdf
+        
+        | 
+        migratebash.bat
+
+        | 
+
+        1100123\
+
+        |
+        |        F11001233300420120045501Nombrearchivo1.pdf
+        |        F11001233300420120045501Nombrearchivo2.pdf
+        |        F11001233300420120045501Nombrearchivo3.pdf
+        |        F11001233300420120045501Nombrearchivo4.pdf
+        |        F11001233300420120045501Nombrearchivo5.pdf
 
  -----------    
  Despues de la ejecución
  
- 
-  migratebash.bat
-  
-  |
-  1100123\
-  |
-  
-  1100123_AZURE\
-  |
+    | 
+    migratebash.bat
+
+    |
+    1100123\
+    |
+
+          1100123_AZURE\
+          |
   
                 11001233300420120045501\
                 |
