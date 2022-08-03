@@ -1,5 +1,10 @@
 # migratebash
-A bash to migrate files from a folder taking part of the file name to create a folder
+Un archivo bash .bat para migrar archivos desde una carpeta a otra
+
+* .bat bash split string
+* .bat bash move files
+* .bat bash show folder files 
+* .bat bash show order folder files
 
 Teniendo una estructura de archiuvos en carpetas con codigos, 
 toma los nombres de los archivos de esa carpeta,
