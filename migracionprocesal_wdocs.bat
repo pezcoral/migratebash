@@ -2,7 +2,7 @@
 
 echo //////////////////////////////////////////////////////////////////////////////////'
 echo //////////////////////////////////////////////////////////////////////////////////'
-echo /////////////////////MIGRACION DE ARCHIVOS A AZURE ///////////////////////////////'
+echo /////////////////////MIGRACION DE ARCHIVOS A AZURE SAMAI//////////////////////////'
 echo //////////////////////////////////////////////////////////////////////////////////'
 echo //////////////////////////////////////////////////////////////////////////////////'
 echo ////////////////////////////////PRIMERA PARTE/////////////////////////////////////'
@@ -22,7 +22,7 @@ echo UBICAR AL MISMO NIVEL DE wdocp y wdocs.
 echo REVISAR ADEMAS QUE DENTRO DE WDOCS LOS ARCHIVOS TENGAN ESTE FORMATO 1_110012334... 24_1100112334...
 pause 
 echo SACAR LOS ARCHIVOS QUE TIENEN FORMATO DISTINTO TIPO F11001145 o D110012155 A CARPETA WDOCSOLD
-echo Si es correcto escriba Y.
+echo Ya movio los documentos F. Si es correcto escriba Y.
 set/p empezarmigracion= (Y)?: 
 if not %empezarmigracion%==Y exit
 echo 
@@ -72,10 +72,13 @@ FOR /R %~dp0wdocs\ %%G IN (*.*) DO (
 	SET NEWFF=%~dp0%urldirectorio%_AZURE\!NEWFOLDER!\!NAMEFILE!
 	echo !NEWFF!
 	
+	::Enviar el texto del archivo movido al sqlupdate
+	echo !NEWFOLDER!/!NAMEFILE!>> toSqlUpdate.txt
+	
 	::Mover el archivo a la carpeta creada
 	move %%G !NEWFF!	
 	
-
+	cls
 )
 color 2f
 echo VALIDA LA CARPETA CREADA
